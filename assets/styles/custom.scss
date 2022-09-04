@@ -1,0 +1,379 @@
+$primary:       #DCD7C9;
+$secondary:     #A27B5C;
+$success:       #3A86FF;
+$info:          #FF006E;
+$light:         #3F4E4F;
+$dark:          #2C3639;
+$font-stack: Helvetica, sans-serif;
+
+
+@font-face {
+    font-family: "LUCON";
+    src: url("/public/font/LUCON.TTF");
+   }
+
+@font-face {
+    font-family: "Linux";
+    src: url("/public/font/Linux.ttf");
+   }
+
+html{
+    scroll-behavior: smooth;
+}
+    
+    body{
+        background-color: #2C3639   !important;
+        padding-top: 80px !important;
+        color: white !important;
+        
+    }
+
+    .bordure-titre
+    {
+        background-color: #3F4E4F !important;
+        border-radius: 20px;
+        box-shadow: 4px 4px 6px $secondary;
+        padding: 1%;
+
+        img{
+            border-radius: 20px;
+        }
+    }
+
+    .bordure-info
+    {
+        background-color: #3F4E4F !important;
+    }
+        
+    h1{
+       text-align: center;
+       color : $primary;
+       font-size: 55px !important;
+       font-family: 'LUCON' !important;
+       
+    }
+
+    h2{
+        color : $primary;
+        font-size: 35px !important;
+        font-family: "LUCON";
+        
+        
+     }
+
+    .indic
+    {
+        text-align : center ; 
+        font-family : 'LUCON' ; 
+        color : #2C3639
+    }
+    .text-intro
+    {
+        color: #A27B5C;
+        font-size: 23px;
+        font-family: 'Linux' !important;
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    
+    .card
+    {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .info-interets
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+
+
+    .info-comp-back
+    {
+        background-color: $dark;
+        border: 1px solid $dark;
+        border-radius: 10px;
+
+        h3
+        {
+            margin-top: 5px;
+            text-align : center ; 
+            font-family : 'LUCON' ; 
+            font-size : 24px ;
+            color: $secondary;
+            font-weight: bold;
+            text-shadow: 0.5px 0.5px $primary ;
+        }
+    }
+    .card-text
+    {
+        color: $secondary;
+    }
+
+    span{
+        color: $primary;
+        font-weight: bold;
+    }
+      
+    .nav-link {
+          display: block;
+          padding: .5rem 1rem;
+          text-decoration: none;
+          transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+          color: #fff;
+          margin-right: 10px;
+          text-transform: uppercase;
+          font-weight: 200 !important;
+          font-size: 20px;
+          font-family: 'Roboto Mono', monospace;
+      }
+     
+    nav{
+        background-color: rgba($color: #3F4E4F, $alpha: 0.5) !important;
+        border-bottom: 1px solid whitesmoke;
+        
+      }
+      .navbar-nav .active {
+          border-bottom: 4px solid #fff
+      }
+      
+      .logo {
+          margin-bottom: 7px !important
+      }
+      
+      .navbar {
+          padding-top: .5rem;
+          padding-bottom: .5rem !important;
+          
+      }
+      .navbar-brand{
+        font-family: 'Lobster', cursive;
+        font-size: 27px !important;
+        color: $primary !important;
+      }
+    
+      
+    
+    .ss_menu{
+        font-size: 18px;
+        flex-grow: 0 !important;
+    }
+    @media (max-width:767px) {
+    
+    h1
+    {
+        font-size: 35px !important;
+    }
+    .box
+    {
+        flex-wrap: wrap !important;
+    }
+     
+    .img-intro
+    {
+        width: 70% !important;
+        text-align: center;
+    }
+
+    .bd-highlight
+    {
+        text-align: center !important;
+    }
+
+
+    .body
+    {
+        padding: 10px !important;
+    }
+        .ss_menu{
+            font-size: 23px;
+        }
+
+      
+        .item{
+          
+          background-size: 100%;
+          margin-top: 0px;
+        }
+        .nav-link{
+            font-size: 20px;
+        }
+        navbar-toggler{
+            width: 1px;
+        }
+    }
+    
+    
+    .intro {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto
+    }
+    
+    .intro p {
+        margin-bottom: 0
+    }
+    
+    
+    .item {
+        margin-bottom: 30px;
+        border: 1px solid white;
+        box-shadow: 5px 3px 3px white;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    .bg1{
+      background-image:url(https://i.imgur.com/dhJNVD0.png);
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    
+    .bg2{
+      background-image:url(https://i.imgur.com/ZOKp8LH.png);
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+    }
+    .bg3{
+      background-image:url(https://i.imgur.com/CG9wgRW.png);
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80%;
+    }
+    
+    .item .box {
+        border-radius: 10px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+        position: relative;
+        overflow: hidden
+    }
+    
+    .item .cover {
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.70);
+        transition: opacity 0.15s ease-in;
+        opacity: 0;
+        padding-top: 50px;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+    }
+    .item .cover a{
+      text-transform: none;
+      text-decoration: none;
+      color: white ;
+    }
+    .item:hover .cover {
+        opacity: 1
+    }
+    
+    .item .name {
+        font-weight: bold;
+        margin-bottom: 8px
+    }
+    
+    .item .title {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #bbd8fb;
+        letter-spacing: 2px;
+        font-size: 13px;
+        margin-bottom: 20px
+    }
+    .team-grid{
+        margin-bottom: 100px;
+    }
+    .lang {
+        font-size: 18px
+    }
+    
+    .lang a {
+        color: inherit;
+        margin: 0 10px;
+        display: inline-block;
+        opacity: 0.7
+    }
+    
+    .lang a:hover {
+        opacity: 1
+    }
+    
+    .titre{
+        color: white;
+        font-family: monospace;
+        
+    }
+    .form{
+        background-color: transparent !important;
+        border-color: white !important;
+    }
+    label{
+        color: white !important;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .input{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .bulle{
+        cursor:default;
+        display: inline-block;
+        border: 1px solid white;
+        margin: 5px;
+        padding: 0 1em;
+        color:black;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 15px;
+        background-color: white;
+        border-radius: 18px;
+    }
+    .bulle:hover{
+        background-color: transparent;
+        color: white;
+        opacity: 0.9;
+        transition: all .3s;
+    }
+    
+   
+    .center{
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        text-align:center; 
+      }
+      section{
+
+        
+        //FOR THE ANIMATION
+        opacity:0;
+        transform: translateY(12px);
+        transition: .5s;
+        
+        &.visible{
+          transform: translateY(0);
+          opacity: 1;
+          transition: 1s;
+        }
+      }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="img/Logo-Site-Perso.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	<div class="container-fluid"> 
+		<a href="https://andrew-marbach.xyz/" class="navbar-brand">Andrew Marbach</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+				<span class="navbar-toggler-icon"></span> 
+			</button>
+		<div class="collapse navbar-collapse ss_menu" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto"> 
+				<a class="nav-link mx-auto" aria-current="page" href="#info" style="font-family : 'LUCON'">Qui suis-je ?</a> 
+				<a class="nav-link mx-auto" href="#projets" style="font-family : 'LUCON'">Projets</a> 
+				<a class="nav-link mx-auto" href="#reseaux" style="font-family : 'LUCON'">Contact</a> 
+				<a class="nav-link mx-auto" href="#"></a> 
+				
+			</div>
+		</div>
+	</div>
+</nav>
+        {% block body %}
+        
+        
+        {% endblock %}
+    </body>
+</html>
