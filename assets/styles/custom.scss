@@ -83,6 +83,8 @@ html{
     {
         margin-right: 5px;
         margin-left: 5px;
+
+        
     }
     .info-interets
     {
@@ -114,6 +116,16 @@ html{
         color: $secondary;
     }
 
+    .card-body
+    {
+        a{
+            h5
+        {
+            padding-top: 10px;
+            color: $primary !important;
+        }
+        }
+    }
     span{
         color: $primary;
         font-weight: bold;
@@ -164,6 +176,10 @@ html{
     }
     @media (max-width:767px) {
     
+    .card-transparent{
+        padding-left: 0px !important;
+    }
+
     h1
     {
         font-size: 35px !important;
