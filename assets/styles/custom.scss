@@ -22,7 +22,7 @@ html{
 }
     
     body{
-        background-color: #2C3639   !important;
+        background-color: rgb(44, 54, 57)   !important;
         padding-top: 80px !important;
         color: white !important;
         
@@ -32,6 +32,7 @@ html{
     {
         background-color: #3F4E4F !important;
         border-radius: 20px;
+        margin-bottom: 2%;
         box-shadow: 4px 4px 6px $secondary;
         padding: 1%;
 
@@ -111,6 +112,27 @@ html{
             text-shadow: 0.5px 0.5px $primary ;
         }
     }
+    .info-comp-front
+    {
+        background-color: $dark;
+        border: 1px solid $dark;
+        border-radius: 10px;
+        margin-left: 5px;
+            margin-right: 5px;
+
+        
+
+        h3
+        {
+            margin-top: 5px;
+            text-align : center ; 
+            font-family : 'LUCON' ; 
+            font-size : 24px ;
+            color: $secondary;
+            font-weight: bold;
+            text-shadow: 0.5px 0.5px $primary ;
+        }
+    }
     .card-text
     {
         color: $secondary;
@@ -147,6 +169,8 @@ html{
     nav{
         background-color: rgba($color: #3F4E4F, $alpha: 0.5) !important;
         border-bottom: 1px solid whitesmoke;
+
+        
         
       }
       .navbar-nav .active {
@@ -201,6 +225,7 @@ html{
     }
 
 
+
     .body
     {
         padding: 10px !important;
@@ -235,7 +260,7 @@ html{
     }
     
     
-    .item {
+    .itemm {
         margin-bottom: 30px;
         border: 1px solid white;
         box-shadow: 5px 3px 3px white;
@@ -264,8 +289,30 @@ html{
       background-repeat: no-repeat;
       background-size: 80%;
     }
+    .bg4{
+        background-image: url("/public/img/Logo-Site-Perso.ico");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+      }
+
+    .bg5{
+        background-image: url("/public/img/iut.png");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+      }
+    .bg6{
+        background-image: url("/public/img/iutt.png");
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 140%;
+      }
     
-    .item .box {
+    .itemm .box {
         border-radius: 10px;
         text-align: center;
         background-repeat: no-repeat;
@@ -276,7 +323,7 @@ html{
         overflow: hidden
     }
     
-    .item .cover {
+    .itemm .cover {
         text-align: center;
         border-radius: 10px;
         position: absolute;
@@ -284,28 +331,28 @@ html{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.70);
+        background-color:rgba(44, 54, 57,0.70);   
         transition: opacity 0.15s ease-in;
         opacity: 0;
         padding-top: 50px;
         color: white;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
     }
-    .item .cover a{
+    .itemm .cover a{
       text-transform: none;
       text-decoration: none;
       color: white ;
     }
-    .item:hover .cover {
+    .itemm:hover .cover {
         opacity: 1
     }
     
-    .item .name {
+    .itemm .name {
         font-weight: bold;
         margin-bottom: 8px
     }
     
-    .item .title {
+    .itemm .title {
         text-transform: uppercase;
         font-weight: bold;
         color: #bbd8fb;
@@ -390,6 +437,9 @@ html{
         &.visible{
           transform: translateY(0);
           opacity: 1;
-          transition: 1s;
+          transition: 1.5s;
         }
       }
+
+
+      
