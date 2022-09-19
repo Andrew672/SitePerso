@@ -22,6 +22,12 @@ class HomeController extends AbstractController
 
         $form->handleRequest($request);
 
+
+        if($form->isSubmitted() && $form->isValid()){
+
+            dd("HELLO !");
+        }
+
         return $this->render('home/index.html.twig', [
             'form' => $form->createView(),
             'controller_name' => 'HomeController',
