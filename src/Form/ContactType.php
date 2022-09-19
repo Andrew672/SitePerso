@@ -33,6 +33,10 @@ class ContactType extends AbstractType
             ])
             ->add('captcha',ReCaptchaType::class, [
                 'label' => 'Captcha',
+                'required' => true,
+                'attr' => [
+                    'style' => 'margin : auto',
+                ],
                 
             ])
             ->add('message', TextareaType::class, [

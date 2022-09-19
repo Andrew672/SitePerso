@@ -25,7 +25,8 @@ class HomeController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid()){
 
-            dd("HELLO !");
+            $this->addFlash('success',"Mail envoyé !");
+            return $this->redirect($this->generateUrl('app_home').'#contact'); 
         }
 
         return $this->render('home/index.html.twig', [

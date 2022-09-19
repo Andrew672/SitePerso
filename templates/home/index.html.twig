@@ -7,6 +7,7 @@
 <div class="body">
 
   <div class="container bordure-titre">
+
     <h1 id='info'>Qui suis-je ? </h1>
     <hr>
     <p class="indic">DÉVELOPPEUR JUNIOR FULL STACK</p>
@@ -163,8 +164,7 @@
 
   </section>
 
-</div> <br> <br> <br>
-
+</div> 
 
   
 
@@ -278,16 +278,15 @@
     </div>
 
 
-
-
-
-
   <div class="container bordure-titre">
    <section class="info-interets">
     <br>
         <h1 id='contact'>Me contacter </h1>
         <hr>
-
+      <div class="container">
+  {% for message in app.flashes('success') %}
+    <div class="alert alert-success"style="" role="alert">{{ message }}</div>
+ {% endfor %}
       {{ form_start(form) }} 
 
       <div class="container">
@@ -302,8 +301,23 @@
   {{ form_row(form.email) }}
   {{ form_row(form.sujet) }}
   {{ form_row(form.message) }}
-  {{ form_row(form.captcha) }}
-  {{ form_end(form) }}
+   <div class="d-flex justify-content-center" style="margin : 10px">
+    {{ form_errors(form.captcha) }}
+</div>
+  <div class="d-flex justify-content-center" style="margin : 10px">
+    {{ form_row(form.captcha) }}
+</div>
+
+
+ 
+  
+
+<div class="d-flex justify-content-center">
+  <button type="submit" class="btn btn-lg btn-primary" style='text-align : center' >Envoyer</button>
+</div>
+ 
+ {{ form_end(form) }}
+ </div>
 
 </div>
     </div>
